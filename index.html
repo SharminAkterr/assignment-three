@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdTech Website</title>
+    <!------ Google font start from here ------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind css link cdn start from here -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        poppins: ["Poppins", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <!-- tailwind css link cdn end here -->
+</head>
+
+<body>
+    <!------------ header start from here -------->
+    <header>
+        <!------------ nav start from here -------->
+        <section class="bg-clifford font-poppins">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost normal-case text-4xl">Pro Edu</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 lg:text-lg">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">Deals</a></li>
+                        <li><a href="">Success</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Register</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn hidden sm:flex mr-5 lg:mr-0 capitalize lg:text-xl">Register</a>
+                    <div class="dropdown dropdown-bottom dropdown-end">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box mt-4">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Courses</a></li>
+                            <li><a href="">Deals</a></li>
+                            <li><a href="">Success</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- carousel start from here  -->
+            <div></div>
+        </section>
+    </header>
+    <!------------ header end here -------->
+
+    <!------------ main start from here -------->
+    <main>
+        <div>jjj</div>
+    </main>
+    <!------------ main end here -------->
+</body>
+
+</html>
