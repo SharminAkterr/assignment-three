@@ -20,7 +20,13 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        primaryColor: '#4A4A4A',
+                        secondaryColor: '#777777',
+                        carouselColor: 'rgba(29, 29, 29, 0.7)',
+                        btntextColor: '#289BDE',
+                        btnColor: 'rgba(40, 155, 222, 1)',
+                        titleColor: '#1D1D1D',
+                        borderColor: '#E8E8E8',
                     },
                     fontFamily: {
                         poppins: ["Poppins", "sans-serif"],
@@ -35,14 +41,14 @@
 <body>
     <!------------ header start from here -------->
     <header>
-        <!------------ nav start from here -------->
-        <section class="bg-clifford font-poppins">
-            <div class="navbar container mx-auto">
+        <section class="font-poppins">
+            <!------------ nav start from here -------->
+            <div class="navbar container mx-auto pt-8 pb-12">
                 <div class="navbar-start">
-                    <a class="btn btn-ghost normal-case text-4xl">Pro Edu</a>
+                    <button><a class="text-4xl font-semibold text-primaryColor" href="">Pro Edu</a></button>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 lg:text-lg">
+                    <ul class="menu menu-horizontal px-1 lg:text-lg text-secondaryColor">
                         <li><a href="">Home</a></li>
                         <li><a href="">Courses</a></li>
                         <li><a href="">Deals</a></li>
@@ -52,7 +58,10 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn hidden sm:flex mr-5 lg:mr-0 capitalize lg:text-xl">Register</a>
+                    <button
+                        class="hidden sm:flex mr-5 lg:mr-0 capitalize lg:text-xl font-semibold text-btntextColor border border-btntextColor px-8 py-3 rounded-md">
+                        <a href="">Register</a>
+                    </button>
                     <div class="dropdown dropdown-bottom dropdown-end">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -74,56 +83,65 @@
             </div>
 
             <!-- carousel start from here  -->
-            <div class="carousel w-full">
+            <div class="carousel w-full container mx-auto rounded-md mb-32">
                 <!-------- slide 1 ---------->
                 <div id="slide1" class="carousel-item relative w-full">
-                    <div class="w-screen h-screen bg-no-repeat bg-cover flex justify-center items-center"
+                    <div class="w-screen h-screen bg-no-repeat bg-cover flex flex-col justify-center items-center text-white text-center bg-blend-overlay bg-carouselColor"
                         style="background-image: url(./images/cover/cover-1.png);">
-                        <h1 class="">Lorem ipsum dolor sit amet.</h1>
+                        <h1 class="text-5xl font-semibold mb-2">Get Started Digital <br> Learning</h1>
+                        <p class="w-6/12 mb-5">It is a long established fact that a reader will be distracted by the
+                            readable
+                            content of a
+                            page when looking at its layout.</p>
+                        <button class="bg-btnColor capitalize text-lg text-white px-5 py-3 rounded-md font-semibold">
+                            <a href="">Get Started</a>
+                        </button>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
+                        <a href="#slide3" class="text-white text-4xl">❮</a>
+                        <a href="#slide2" class="text-white text-4xl">❯</a>
                     </div>
                 </div>
                 <!-------- slide 2 ---------->
                 <div id="slide2" class="carousel-item relative w-full">
-                    <div class="w-screen h-screen bg-no-repeat bg-cover flex justify-center items-center"
+                    <div class="w-screen h-screen bg-no-repeat bg-cover flex flex-col justify-center items-center text-white text-center bg-blend-overlay bg-carouselColor"
                         style="background-image: url(./images/cover/cover-2.jpg);">
-                        <h1 class="">Lorem ipsum dolor sit amet.</h1>
+                        <h1 class="text-5xl font-semibold mb-2">Get Started Digital <br> Learning</h1>
+                        <p class="w-6/12 mb-5">It is a long established fact that a reader will be distracted by the
+                            readable
+                            content of a
+                            page when looking at its layout.</p>
+                        <button class="bg-btnColor capitalize text-lg text-white px-5 py-3 rounded-md font-semibold">
+                            <a href="">Get Started</a>
+                        </button>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
+                        <a href="#slide1" class="text-white text-4xl">❮</a>
+                        <a href="#slide3" class="text-white text-4xl">❯</a>
                     </div>
                 </div>
                 <!-------- slide 3 ---------->
                 <div id="slide3" class="carousel-item relative w-full">
-                    <div class="w-screen h-screen bg-no-repeat bg-cover flex justify-center items-center"
+                    <div class="w-screen h-screen bg-no-repeat bg-cover flex flex-col justify-center items-center text-white text-center bg-blend-overlay bg-carouselColor"
                         style="background-image: url(./images/cover/cover-3.jpg);">
-                        <h1 class="">Lorem ipsum dolor sit amet.</h1>
+                        <h1 class="text-5xl font-semibold mb-2">Get Started Digital <br> Learning</h1>
+                        <p class="w-6/12 mb-5">It is a long established fact that a reader will be distracted by the
+                            readable
+                            content of a
+                            page when looking at its layout.</p>
+                        <button class="bg-btnColor capitalize text-lg text-white px-5 py-3 rounded-md font-semibold">
+                            <a href="">Get Started</a>
+                        </button>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
+                        <a href="#slide2" class="text-white text-4xl">❮</a>
+                        <a href="#slide1" class="text-white text-4xl">❯</a>
                     </div>
                 </div>
             </div>
         </section>
     </header>
     <!------------ header end here -------->
-
-    <!------------ main start from here -------->
-    <main>
-        <div>jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Impedit asperiores illum, hic omnis sed maxime sapiente adipisci dolorum perspiciatis odio architecto quasi
-            voluptatem praesentium, quo in placeat magnam explicabo eveniet. Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Aspernatur, laborum sit, non nesciunt modi dolores et unde, perferendis nostrum maiores
-            minus optio. Et consequuntur officia cupiditate delectus molestiae eveniet facere earum quibusdam nulla
-            asperiores soluta hic necessitatibus, quisquam numquam expedita corporis fugiat praesentium ullam labore
-            modi id voluptatem saepe consequatur.</div>
-    </main>
-    <!------------ main end here -------->
 </body>
 
 </html>
