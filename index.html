@@ -27,6 +27,7 @@
                         btnColor: 'rgba(40, 155, 222, 1)',
                         titleColor: '#1D1D1D',
                         borderColor: '#E8E8E8',
+                        exploreBg: '#F4FAFD',
                     },
                     fontFamily: {
                         poppins: ["Poppins", "sans-serif"],
@@ -41,11 +42,11 @@
 <body>
     <!------------ header start from here -------->
     <header>
-        <section class="font-poppins">
-            <!------------ nav start from here -------->
+        <!------------ nav start from here -------->
+        <section class="mx-5 sm:mx-auto font-poppins">
             <div class="navbar container mx-auto pt-8 pb-12">
                 <div class="navbar-start">
-                    <button><a class="text-4xl font-semibold text-primaryColor" href="">Pro Edu</a></button>
+                    <button><a class="text-xl sm:text-4xl font-semibold text-primaryColor" href="">Pro Edu</a></button>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 lg:text-lg text-secondaryColor">
@@ -81,19 +82,27 @@
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- carousel start from here  -->
+        <!-------------- carousel start from here  ------------>
+        <section class="mx-5 sm:mx-auto font-poppins">
             <div class="carousel w-full container mx-auto rounded-md mb-32">
                 <!-------- slide 1 ---------->
                 <div id="slide1" class="carousel-item relative w-full">
-                    <div class="w-screen h-screen bg-no-repeat bg-cover flex flex-col justify-center items-center text-white text-center bg-blend-overlay bg-carouselColor"
+                    <div class="w-screen h-screen bg-no-repeat bg-cover flex flex-col justify-center items-center text-white text-center bg-blend-overlay bg-carouselColor tracking-wide"
                         style="background-image: url(./images/cover/cover-1.png);">
-                        <h1 class="text-5xl font-semibold mb-2">Get Started Digital <br> Learning</h1>
-                        <p class="w-6/12 mb-5">It is a long established fact that a reader will be distracted by the
+                        <h1 class="text-xl sm:text-4xl lg:text-6xl font-semibold mb-2">Get Started Digital
+                            <br>
+                            Learning
+                        </h1>
+                        <p class="w-6/12 text-xs sm:text-base lg:text-lg mb-5">It is a long established fact that a
+                            reader will be distracted by
+                            the
                             readable
                             content of a
                             page when looking at its layout.</p>
-                        <button class="bg-btnColor capitalize text-lg text-white px-5 py-3 rounded-md font-semibold">
+                        <button
+                            class="bg-btnColor text-base sm:text-lg lg:text-xl text-white px-5 py-3 rounded-md font-semibold">
                             <a href="">Get Started</a>
                         </button>
                     </div>
@@ -104,14 +113,20 @@
                 </div>
                 <!-------- slide 2 ---------->
                 <div id="slide2" class="carousel-item relative w-full">
-                    <div class="w-screen h-screen bg-no-repeat bg-cover flex flex-col justify-center items-center text-white text-center bg-blend-overlay bg-carouselColor"
+                    <div class="w-screen h-screen bg-no-repeat bg-cover flex flex-col justify-center items-center text-white text-center bg-blend-overlay bg-carouselColor tracking-wide"
                         style="background-image: url(./images/cover/cover-2.jpg);">
-                        <h1 class="text-5xl font-semibold mb-2">Get Started Digital <br> Learning</h1>
-                        <p class="w-6/12 mb-5">It is a long established fact that a reader will be distracted by the
+                        <h1 class="text-xl sm:text-4xl lg:text-6xl font-semibold mb-2">Get Started Digital
+                            <br>
+                            Learning
+                        </h1>
+                        <p class="w-6/12 text-xs sm:text-base lg:text-lg mb-5">It is a long established fact that a
+                            reader will be distracted by
+                            the
                             readable
                             content of a
                             page when looking at its layout.</p>
-                        <button class="bg-btnColor capitalize text-lg text-white px-5 py-3 rounded-md font-semibold">
+                        <button
+                            class="bg-btnColor text-base sm:text-lg lg:text-xl text-white px-5 py-3 rounded-md font-semibold">
                             <a href="">Get Started</a>
                         </button>
                     </div>
@@ -122,14 +137,20 @@
                 </div>
                 <!-------- slide 3 ---------->
                 <div id="slide3" class="carousel-item relative w-full">
-                    <div class="w-screen h-screen bg-no-repeat bg-cover flex flex-col justify-center items-center text-white text-center bg-blend-overlay bg-carouselColor"
+                    <div class="w-screen h-screen bg-no-repeat bg-cover flex flex-col justify-center items-center text-white text-center bg-blend-overlay bg-carouselColor tracking-wide"
                         style="background-image: url(./images/cover/cover-3.jpg);">
-                        <h1 class="text-5xl font-semibold mb-2">Get Started Digital <br> Learning</h1>
-                        <p class="w-6/12 mb-5">It is a long established fact that a reader will be distracted by the
+                        <h1 class="text-xl sm:text-4xl lg:text-6xl font-semibold mb-2">Get Started Digital
+                            <br>
+                            Learning
+                        </h1>
+                        <p class="w-6/12 text-xs sm:text-base lg:text-lg mb-5">It is a long established fact that a
+                            reader will be distracted by
+                            the
                             readable
                             content of a
                             page when looking at its layout.</p>
-                        <button class="bg-btnColor capitalize text-lg text-white px-5 py-3 rounded-md font-semibold">
+                        <button
+                            class="bg-btnColor text-base sm:text-lg lg:text-xl text-white px-5 py-3 rounded-md font-semibold">
                             <a href="">Get Started</a>
                         </button>
                     </div>
@@ -147,23 +168,29 @@
     <main>
         <!---- our course details start from here ---->
         <section class="container mx-auto font-poppins">
-            <div class="mx-auto lg:w-3/6 text-center space-y-3">
+            <div class="mx-5 sm:mx-auto lg:w-3/6 text-center space-y-3">
                 <h1 class="text-titleColor text-2xl sm:text-3xl lg:text-5xl font-semibold">Discover Our Popular Courses
                 </h1>
-                <p class="text-secondaryColor">It is a long established fact that a reader will be distracted by the
+                <p class="text-sm sm:text-base text-secondaryColor">It is a long established fact that a reader will be
+                    distracted by
+                    the
                     readable content of a page when
                     looking at its layout</p>
             </div>
+
             <!-- courses start from here -->
-            <div class="grid lg:grid-cols-2 gap-6 my-12">
+            <div class="grid lg:grid-cols-2 gap-6 my-12 mx-5 sm:mx-0">
                 <!-- course 1  -->
-                <div class="flex flex-col sm:flex-row items-center gap-6 border border-borderColor rounded-md">
-                    <div>
-                        <img class="w-screen" src="./images/course/course-1.png" alt="">
+                <div class="flex flex-col md:flex-row items-center gap-x-6 border border-borderColor rounded-md">
+                    <div class="w-full md:w-1/2">
+                        <img class="w-screen md:w-full" src="./images/course/course-1.png" alt="">
                     </div>
-                    <div>
-                        <h3 class="text-2xl text-primaryColor font-semibold">Fundamental Of UI/UX Design</h3>
-                        <p class="text-secondaryColor">Some quick example text to build on the card title and
+                    <div class="m-5 md:my-8 md:mx-0">
+                        <h3 class="sm:text-2xl text-primaryColor font-semibold">Fundamental Of UI/UX Design</h3>
+                        <p class="py-2 text-sm sm:text-base text-secondaryColor">Some quick example text to
+                            build on the
+                            card
+                            title and
                             make up
                             the
                             bulk of the card.</p>
@@ -171,13 +198,16 @@
                     </div>
                 </div>
                 <!-- course 2  -->
-                <div class="flex flex-col sm:flex-row items-center gap-6 border border-borderColor rounded-md">
-                    <div>
-                        <img src="./images/course/course-2.png" alt="">
+                <div class="flex flex-col md:flex-row items-center gap-x-6 border border-borderColor rounded-md">
+                    <div class="w-full md:w-1/2">
+                        <img class="w-screen md:w-full" src="./images/course/course-2.png" alt="">
                     </div>
-                    <div>
-                        <h3 class="text-2xl text-primaryColor font-semibold">Fundamental Of UI/UX Design</h3>
-                        <p class="text-secondaryColor">Some quick example text to build on the card title and
+                    <div class="m-5 md:my-8 md:mx-0">
+                        <h3 class="sm:text-2xl text-primaryColor font-semibold">Fundamental Of UI/UX Design</h3>
+                        <p class="py-2 text-sm sm:text-base text-secondaryColor">Some quick example text to
+                            build on the
+                            card
+                            title and
                             make up
                             the
                             bulk of the card.</p>
@@ -185,13 +215,16 @@
                     </div>
                 </div>
                 <!-- course 3  -->
-                <div class="flex flex-col sm:flex-row items-center gap-6 border border-borderColor rounded-md">
-                    <div>
-                        <img src="./images/course/course-3.png" alt="">
+                <div class="flex flex-col md:flex-row items-center gap-x-6 border border-borderColor rounded-md">
+                    <div class="w-full md:w-1/2">
+                        <img class="w-screen md:w-full" src="./images/course/course-3.png" alt="">
                     </div>
-                    <div>
-                        <h3 class="text-2xl text-primaryColor font-semibold">Fundamental Of UI/UX Design</h3>
-                        <p class="text-secondaryColor">Some quick example text to build on the card title and
+                    <div class="m-5 md:my-8 md:mx-0">
+                        <h3 class="sm:text-2xl text-primaryColor font-semibold">Fundamental Of UI/UX Design</h3>
+                        <p class="py-2 text-sm sm:text-base text-secondaryColor">Some quick example text to
+                            build on the
+                            card
+                            title and
                             make up
                             the
                             bulk of the card.</p>
@@ -199,13 +232,16 @@
                     </div>
                 </div>
                 <!-- course 4  -->
-                <div class="flex flex-col sm:flex-row items-center gap-6 border border-borderColor rounded-md">
-                    <div>
-                        <img src="./images/course/course-4.png" alt="">
+                <div class="flex flex-col md:flex-row items-center gap-x-6 border border-borderColor rounded-md">
+                    <div class="w-full md:w-1/2">
+                        <img class="w-screen md:w-full" src="./images/course/course-4.png" alt="">
                     </div>
-                    <div>
-                        <h3 class="text-2xl text-primaryColor font-semibold">Fundamental Of UI/UX Design</h3>
-                        <p class="text-secondaryColor">Some quick example text to build on the card title and
+                    <div class="m-5 md:my-8 md:mx-0">
+                        <h3 class="sm:text-2xl text-primaryColor font-semibold">Fundamental Of UI/UX Design</h3>
+                        <p class="py-2 text-sm sm:text-base text-secondaryColor">Some quick example text to
+                            build on the
+                            card
+                            title and
                             make up
                             the
                             bulk of the card.</p>
@@ -213,13 +249,16 @@
                     </div>
                 </div>
                 <!-- course 5  -->
-                <div class="flex flex-col sm:flex-row items-center gap-6 border border-borderColor rounded-md">
-                    <div>
-                        <img src="./images/course/course-5.png" alt="">
+                <div class="flex flex-col md:flex-row items-center gap-x-6 border border-borderColor rounded-md">
+                    <div class="w-full md:w-1/2">
+                        <img class="w-screen md:w-full" src="./images/course/course-5.png" alt="">
                     </div>
-                    <div>
-                        <h3 class="text-2xl text-primaryColor font-semibold">Fundamental Of UI/UX Design</h3>
-                        <p class="text-secondaryColor">Some quick example text to build on the card title and
+                    <div class="m-5 md:my-8 md:mx-0">
+                        <h3 class="sm:text-2xl text-primaryColor font-semibold">Fundamental Of UI/UX Design</h3>
+                        <p class="py-2 text-sm sm:text-base text-secondaryColor">Some quick example text to
+                            build on the
+                            card
+                            title and
                             make up
                             the
                             bulk of the card.</p>
@@ -227,13 +266,16 @@
                     </div>
                 </div>
                 <!-- course 6  -->
-                <div class="flex flex-col sm:flex-row items-center gap-6 border border-borderColor rounded-md">
-                    <div>
-                        <img src="./images/course/course-6.png" alt="">
+                <div class="flex flex-col md:flex-row items-center gap-x-6 border border-borderColor rounded-md">
+                    <div class="w-full md:w-1/2">
+                        <img class="w-screen md:w-full" src="./images/course/course-6.png" alt="">
                     </div>
-                    <div>
-                        <h3 class="text-2xl text-primaryColor font-semibold">Fundamental Of UI/UX Design</h3>
-                        <p class="text-secondaryColor">Some quick example text to build on the card title and
+                    <div class="m-5 md:my-8 md:mx-0">
+                        <h3 class="sm:text-2xl text-primaryColor font-semibold">Fundamental Of UI/UX Design</h3>
+                        <p class="py-2 text-sm sm:text-base text-secondaryColor">Some quick example text to
+                            build on the
+                            card
+                            title and
                             make up
                             the
                             bulk of the card.</p>
@@ -241,14 +283,92 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center">
-                <button class="bg-btnColor capitalize text-lg text-white px-5 py-3 rounded-md font-semibold">
+
+            <!-- button for large device start from here  -->
+            <div class="text-center hidden lg:block">
+                <button class="bg-btnColor capitalize text-xl text-white px-5 py-3 rounded-md font-semibold">
                     <a href="">See More Courses</a>
+                </button>
+            </div>
+
+            <!-- button for mobile and tab device start from here  -->
+            <div class="text-center lg:hidden">
+                <button class="bg-btnColor capitalize text-lg text-white px-5 py-3 rounded-md font-semibold">
+                    <a href="">View All</a>
                 </button>
             </div>
         </section>
 
-        <section class="my-32"></section>
+        <!-- Explore the elearning  institude -->
+        <section class="container mx-auto my-32">
+            <div class="hero bg-exploreBg rounded-md">
+                <div class="flex flex-col md:flex-row items-center gap-x-14">
+                    <img src="./images/working.png" class="" />
+                    <div class="">
+                        <h1 class="text-3xl lg:text-5xl font-bold">Explore The elearning Institute</h1>
+                        <p class="py-6">There are many variations of
+                            passages of Lorem Ipsum
+                            available, but the majority
+                            have suffered alteration in some form, by injected humour, or randomised words which don't
+                            look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+                            be sure.</p>
+                        <p>Anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                            generators on the Internet tend to repeat predefined.</p>
+                        <div>
+                        </div>
+                        <!-- ratings of institute  -->
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-y-3">
+                            <div class="">
+                                <h2 class="text-5xl font-bold">3.2K+</h2>
+                                <p class="text-base lg:text-xl">Online Course</p>
+                            </div>
+                            <div class="">
+                                <h2 class="text-5xl font-bold">600+</h2>
+                                <p class="text-base lg:text-xl">Expert member</p>
+                            </div>
+                            <div class="">
+                                <h2 class="text-5xl font-bold">1k+</h2>
+                                <p class="text-base lg:text-xl">Rating & Review</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto my-32">
+            <div class="card md:card-side bg-exploreBg shadow-xl">
+                <figure><img src="./images/working.png" alt="Album" /></figure>
+                <div class="card-body">
+                    <h1 class="text-3xl lg:text-5xl font-bold">Explore The elearning Institute</h1>
+                    <p class="py-6">There are many variations of
+                        passages of Lorem Ipsum
+                        available, but the majority
+                        have suffered alteration in some form, by injected humour, or randomised words which don't
+                        look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+                        be sure.</p>
+                    <p>Anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                        generators on the Internet tend to repeat predefined.</p>
+                    <div class="card-actions">
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-y-3">
+                            <div class="">
+                                <h2 class="text-5xl font-bold">3.2K+</h2>
+                                <p class="text-base lg:text-xl">Online Course</p>
+                            </div>
+                            <div class="">
+                                <h2 class="text-5xl font-bold">600+</h2>
+                                <p class="text-base lg:text-xl">Expert member</p>
+                            </div>
+                            <div class="">
+                                <h2 class="text-5xl font-bold">1k+</h2>
+                                <p class="text-base lg:text-xl">Rating & Review</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Listen</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!------------ main end here -------->
 </body>
