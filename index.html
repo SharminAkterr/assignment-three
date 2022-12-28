@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <!-- tailwind css link cdn start from here -->
+    <!-- tailwind css cdn link & script start from here -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -36,7 +36,7 @@
             },
         };
     </script>
-    <!-- tailwind css link cdn end here -->
+    <!-- tailwind Script end here -->
 </head>
 
 <body>
@@ -306,7 +306,7 @@
                     class="flex flex-col md:flex-row items-center mx-5 sm:mx-auto bg-exploreBg rounded-md gap-5 md:gap-10 lg:gap-14">
                     <!-- image part -->
                     <img src="./images/working.png" class="h-full w-full md:h-[543px] lg:h-full md:w-1/2" />
-                    <!-- written part start from here-->
+                    <!-- written part start from here -->
                     <div class="mx-5 sm:mx-10 md:mx-0 my-10 lg:my-0 md:pr-14">
                         <h1 class="text-3xl lg:text-5xl font-bold">Explore The elearning Institute</h1>
                         <!-- paragraph responsive -->
@@ -358,6 +358,7 @@
                                 <p class="text-base lg:text-xl">Rating & Review</p>
                             </div>
                         </div>
+                        <!-- button  -->
                         <button
                             class="bg-btnColor capitalize text-base md:text-lg text-white px-5 py-3 rounded-md font-semibold">
                             <a href="">Read More</a>
@@ -377,15 +378,78 @@
                         the readable content of a page
                         when looking at its layout</p>
                 </div>
+
+                <!-- modal start from here-->
                 <div>
-                    <button class="lg:text-xl font-semibold text-btntextColor bg-white px-8 py-3 rounded-md">
-                        <a href="">Register</a>
-                    </button>
+                    <!-- The button to open modal -->
+                    <label for="my-modal-3"
+                        class="lg:text-xl font-semibold text-btntextColor bg-white px-8 py-3 rounded-md cursor-pointer">Register</label>
+
+                    <!-- Inside modal part  -->
+                    <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+                    <div class="modal">
+                        <div class="modal-box relative">
+                            <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+
+                            <!-- form start from here -->
+                            <form class="mt-5 sm:mt-2">
+                                <div class="form-control items-center gap-4 lg:gap-5">
+                                    <h1 class="text-xl sm:text-2xl font-bold">Welcome to Our Course</h1>
+                                    <label class="input-group justify-center">
+                                        <span>Student Name</span>
+                                        <input type="text" placeholder="Full Name" class="input input-bordered" />
+                                    </label>
+                                    <label class="input-group justify-center">
+                                        <span>Student E-mail</span>
+                                        <input type="text" placeholder="mail@example.com"
+                                            class="input input-bordered" />
+                                    </label>
+                                    </label>
+                                    <label class="input-group justify-center">
+                                        <span>Student Gender</span>
+                                        <select class="select select-bordered w-6/12">
+                                            <option disabled selected>Gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </label>
+                                    <label class="input-group justify-center">
+                                        <span>Select Course</span>
+                                        <select class="select select-bordered w-[54%]">
+                                            <option disabled selected>Select Course</option>
+                                            <option>Fundamental of Html Website Design</option>
+                                            <option>Fundamental of Html & Css Website Design</option>
+                                            <option>Fundamental of Tailwind Website Design</option>
+                                            <option>Fundamental of Bootstrap Website Design</option>
+                                        </select>
+                                    </label>
+                                    <!-- checkbox  -->
+                                    <div class="form-control">
+                                        <label class="label cursor-pointer">
+                                            <input type="checkbox" checked="checked"
+                                                class="checkbox checkbox-primary mr-3" />
+                                            <span class="label-text">Accept our<a target="_blank" href="./index.html"
+                                                    class="link link-primary"> terms and
+                                                    conditions</a> please</span>
+                                        </label>
+                                    </div>
+                                    <!-- Button  -->
+                                    <div>
+                                        <button type="reset"
+                                            class="bg-btnColor capitalize text-base md:text-lg text-white px-5 py-2 rounded-md font-medium mr-3">Reset</button>
+                                        <button type="submit"
+                                            class="bg-btnColor capitalize text-base md:text-lg text-white px-4 py-2 rounded-md font-medium">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="container mx-auto my-8 sm:my-16 lg:my-32 font-poppins">mmmmmmm</section>
+        <section class="container mx-auto my-8 sm:my-16 lg:my-32 font-poppins">Another section</section>
     </main>
     <!------------ main end here -------->
 </body>
