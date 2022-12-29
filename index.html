@@ -25,9 +25,11 @@
                         carouselColor: 'rgba(29, 29, 29, 0.7)',
                         btntextColor: '#289BDE',
                         btnColor: 'rgba(40, 155, 222, 1)',
+                        lightColor: 'rgba(40, 155, 222, 0.1)',
                         titleColor: '#1D1D1D',
                         borderColor: '#E8E8E8',
                         exploreBg: '#F4FAFD',
+
                     },
                     fontFamily: {
                         poppins: ["Poppins", "sans-serif"],
@@ -413,7 +415,7 @@
                                     </label>
                                     <label class="input-group justify-center">
                                         <span>Student Gender</span>
-                                        <select class="select select-bordered w-6/12">
+                                        <select class="select select-bordered w-[49%]">
                                             <option disabled selected>Gender</option>
                                             <option>Male</option>
                                             <option>Female</option>
@@ -422,7 +424,7 @@
                                     </label>
                                     <label class="input-group justify-center">
                                         <span>Select Course</span>
-                                        <select class="select select-bordered w-[54%]">
+                                        <select class="select select-bordered w-[53%]">
                                             <option disabled selected>Select Course</option>
                                             <option>Fundamental of Html Website Design</option>
                                             <option>Fundamental of Html & Css Website Design</option>
@@ -748,20 +750,85 @@
         <!-- Frequently Asked Questions start from here  -->
         <section class="container mx-auto my-8 sm:my-16 lg:my-32 font-poppins">
             <!-- Title  -->
-            <div class="mx-5 md:mx-auto lg:w-3/5 space-y-3 mb-8 lg:mb-12 text-center">
+            <div class="mx-5 md:mx-auto space-y-3 mb-8 lg:mb-12 text-center">
                 <h1 class="text-titleColor lg:leading-[3.6rem] text-2xl sm:text-3xl lg:text-5xl font-semibold">
                     Frequently
                     Asked
                     Questions
                 </h1>
-                <p class="text-sm sm:text-base text-secondaryColor">It is a long established fact that a
+                <p class="text-sm sm:text-base text-secondaryColor md:w-1/2 mx-auto">It is a long established fact that
+                    a
                     reader will be
                     distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+            <!-- Questions -->
+            <div class="mx-5 md:mx-auto md:w-4/6">
+                <!-- collapse 1 -->
+                <div tabindex="0"
+                    class="collapse collapse-arrow collapse-open mb-5 border border-borderColor rounded-md">
+                    <input type="checkbox" />
+                    <div
+                        class="collapse-title text-sm sm:text-xl text-primaryColor font-semibold px-6 sm:px-10 bg-lightColor">
+                        What is the difference between flexbox and grid?
+                    </div>
+                    <div class="collapse-content px-6 sm:px-10">
+                        <p class="text-sm sm:text-base text-secondaryColor text-justify pt-5">
+                            CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row
+                            or a
+                            column. Grid was designed for two-dimensional layout - rows, and columns at the same
+                            time.The
+                            Flexbox layout is best suited to application components and small-scale layouts, while the
+                            Grid
+                            layout is designed for larger-scale layouts.</p>
+                    </div>
+                </div>
+                <!-- collapse 2 -->
+                <div tabindex="0" class="collapse collapse-arrow mb-5 border border-borderColor rounded-md">
+                    <input type="checkbox" />
+                    <div class="collapse-title text-sm sm:text-xl text-primaryColor font-semibold px-6 sm:px-10">
+                        what is the difference between tailwind and bootstrap?
+                    </div>
+                    <div class="collapse-content px-6 sm:px-10">
+                        <p class="text-sm sm:text-base text-secondaryColor text-justify">Bootstrap is a
+                            component-based
+                            framework, which means it comes with prebuilt components and includes other utilities for
+                            layering displays, spacing, etc. Tailwind, on the other hand, CSS is a utility-first
+                            framework. Using Tailwind CSS is akin to writing regular CSS. Unlike Bootstrap, it has no
+                            prebuilt components.</p>
+                    </div>
+                </div>
+                <!-- collapse 3 -->
+                <div tabindex="0" class="collapse collapse-arrow mb-5 border border-borderColor rounded-md">
+                    <input type="checkbox" />
+                    <div class="collapse-title text-sm sm:text-xl text-primaryColor font-semibold px-6 sm:px-10">
+                        What is Css boxmodel?
+                    </div>
+                    <div class="collapse-content px-6 sm:px-10">
+                        <p class="text-sm sm:text-base text-secondaryColor text-justify">A box in CSS consists of a
+                            content area, which is where any text, images, or other HTML elements are displayed. This is
+                            optionally surrounded by padding, a border, and a margin, on one or more sides. The box
+                            model describes how these elements work together to create a box as displayed by CSS.</p>
+                    </div>
+                </div>
+                <!-- collapse 4 -->
+                <div tabindex="0" class="collapse collapse-arrow mb-5 border border-borderColor rounded-md">
+                    <input type="checkbox" />
+                    <div class="collapse-title text-sm sm:text-xl text-primaryColor font-semibold px-6 sm:px-10">
+                        What is a semantic tag?
+                    </div>
+                    <div class="collapse-content px-6 sm:px-10">
+                        <p class="text-sm sm:text-base text-secondaryColor text-justify">A semantic element clearly
+                            describes its meaning to both the browser and the developer. Examples of non-semantic
+                            elements: div and span - Tells nothing about its content. Examples of semantic elements:
+                            form , table , and article - Clearly defines its content.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- extra -->
         <section class="container mx-auto my-8 sm:my-16 lg:my-32 font-poppins">mmmmmmm</section>
+        <section class="container mx-auto my-80 font-poppins">mmmmmmm</section>
     </main>
     <!------------ main end here -------->
 </body>
